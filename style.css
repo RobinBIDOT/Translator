@@ -1,0 +1,314 @@
+/* Importation des polices et réinitialisation des styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styles de base pour le corps de la page, incluant l'arrière-plan et la mise en page flex */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Styles pour le conteneur principal (.container), y compris l'effet de flou de fond */
+.container {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Styles pour la mise en forme interne et les bordures du wrapper */
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styles pour la zone de texte (input et output de traduction) */
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styles pour la zone de texte de traduction */
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+
+/* Styles pour les zones de texte */
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Styles pour le placeholder des zones de texte */
+.text-input textarea::placeholder {
+  color: #000000;
+}
+
+/* Styles pour les contrôles et les icônes */
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles pour les éléments de liste dans les contrôles */
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+/* Styles pour les icones */
+.controls .row .icons {
+  width: 38%;
+}
+
+.controls .row .icons i {
+  width: 50px;
+  color: #000000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+
+/* Styles spécifiques pour les icônes de la langue source */
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #000000;
+}
+
+/* Styles spécifiques pour les icônes de la langue cible */
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #000000;
+}
+
+/* Styles pour les sélecteurs de langue */
+.controls .row select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+
+/* Styles supplémentaires pour le texte des zones de texte et des sélecteurs, ainsi que pour le bouton */
+.text-input textarea,
+.controls .row select,
+.container button {
+  color: #000000;
+}
+
+/* Styles pour le bouton lors du survol */
+.container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #083d5b;
+}
+
+/* Styles pour les icônes lors du survol */
+.icons i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: #555;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+/* Styles pour les barres de défilement des zones de texte et des sélecteurs */
+.text-input textarea::-webkit-scrollbar,
+.controls .row select::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Styles pour la piste de la barre de défilement */
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Styles pour le pouce de la barre de défilement */
+.text-input textarea::-webkit-scrollbar-thumb,
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+/* Styles pour le bouton d'échange lors du survol */
+.controls .exchange {
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+/* Styles pour les icônes lors de l'activation (click) */
+.controls i:active {
+  transform: scale(0.9);
+}
+
+/* Styles pour le bouton de traduction */
+.container button {
+  width: auto;
+  max-width: 50%;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #06283d;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+}
+
+.contentHeader {
+    padding: 10px 20px; 
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+  }
+
+h2 {
+  margin: 0;
+  color: #000000;
+}
+
+/* Styles pour le pied de page */
+.footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 1vh;
+}
+
+/* Styles pour les vagues dans le pied de page */
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Styles pour le contenu du pied de page */
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Styles pour l'animation des vagues */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/* Adaptation pour les écrans plus petits (responsive design) */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    padding: 20px;
+  }
+
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+
+  .text-input .to-text {
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+
+  .text-input textarea {
+    height: 200px;
+  }
+
+  .controls .row .icons {
+    display: none;
+  }
+
+  .container button {
+    padding: 13px;
+    font-size: 16px;
+  }
+
+  .controls .row select {
+    font-size: 16px;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+  }
+}
