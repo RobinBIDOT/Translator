@@ -13,10 +13,10 @@ Ce projet vise à développer une application web de traduction. Elle permet à 
 ## Technologies Utilisées
 
 - HTML, CSS, JavaScript : pour la structure, le style et la logique de l'application.
-- Bootstrap : pour le design responsive.
-- API de traduction MyMemory : pour la fonctionnalité de traduction.
+- Bootstrap 
+- API de traduction MyMemory 
 
-## Explication de l'API
+## L'API
 
 L'API MyMemory est utilisée pour traduire le texte saisi par l'utilisateur. Elle prend en entrée le texte et les codes de langue source et cible, et retourne le texte traduit.
 
