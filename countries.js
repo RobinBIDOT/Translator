@@ -96,4 +96,4 @@ const countries = {
     "xh-ZA": "Xhosa",
     "yi-YD": "Yiddish",
     "zu-ZA": "Zulu"
-}
+};

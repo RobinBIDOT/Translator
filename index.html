@@ -25,6 +25,15 @@
     <!-- Conteneur principal pour l'application de traduction -->
     <div class="container my-5">
       <div class="wrapper">
+        <!-- Zone pour Web Speech API -->
+        <div class="speech-input">
+          <div class="center">
+            <p id="status" class="microphone-status">Microphone is off</p>
+            <button id="start_button" class="ml-2">
+              <i class="fas fa-microphone"></i> 
+            </button>              
+          </div>
+        </div> 
         <!-- Zone pour la saisie et l'affichage du texte -->
         <div class="text-input">
           <textarea
@@ -51,13 +60,13 @@
               <i id="from" class="fas fa-copy"></i>
               <!-- Icône de copie pour la langue source -->
             </div>
-            <select></select>
+            <select id="select_from_language"></select>
             <!-- Sélecteur de langue source -->
           </li>
           <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
           <!-- Icône pour échanger les langues -->
           <li class="row to">
-            <select></select>
+            <select id="select_to_language"></select>
             <!-- Sélecteur de langue cible -->
             <div class="icons">
               <i id="to" class="fas fa-volume-up"></i>
