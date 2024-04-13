@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Fonction appelée lors du clic sur le bouton de démarrage de la reconnaissance vocale.
   let startButton = document.getElementById('start_button');
   if (startButton) {
-      startButton.addEventListener('click', function(event) {
+      startButton.addEventListener('click', function() {
           if (recognition.started) {
               recognition.stop();
           } else {
