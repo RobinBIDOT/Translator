@@ -15,6 +15,7 @@ Ce projet vise à développer une application web de traduction. Elle permet à 
 - HTML, CSS, JavaScript : pour la structure, le style et la logique de l'application.
 - Bootstrap 
 - API de traduction MyMemory 
+- Web Speech API pour la langue française
 
 ## L'API
 
